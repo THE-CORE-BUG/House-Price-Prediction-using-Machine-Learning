@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bangalore House Price Prediction</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="app.css">
+
+</head>
+<body>
+
+	<script src="app.js"></script>
+
+
+	<div class="container">
+		<h3>Bangalore House Price Prediction</h3>
+		<br>
+
+		<form>
+			<h5><strong>Enter the Area</strong></h5>
+
+			<input type="text" placeholder="Area in sq.ft" id="area">
+			<br><br>
+
+
+			<h5><strong>Enter the BHK</strong></h5>
+
+			<div class="btn-group btn-group-toggle" data-toggle="buttons" id="bhk">
+			  <label class="btn btn-secondary active">
+			    <input type="radio" name="options" id="option1" autocomplete="off" checked value="1"> 1 BHK
+			  </label>
+			  <label class="btn btn-secondary">
+			    <input type="radio" name="options" id="option2" autocomplete="off" value="2"> 2 BHK
+			  </label>
+			  <label class="btn btn-secondary">
+			    <input type="radio" name="options" id="option3" autocomplete="off" value="3"> 3 BHK
+			  </label>
+			  <label class="btn btn-secondary">
+			    <input type="radio" name="options" id="option4" autocomplete="off" value="4"> 4 BHK
+			  </label>
+			  <label class="btn btn-secondary">
+			    <input type="radio" name="options" id="option5" autocomplete="off" value="5"> 5 BHK
+			  </label>
+			</div>
+			<br><br>
+
+			<h5><strong>Enter the Bathrooms</strong></h5>
+
+			<div class="btn-group btn-group-toggle" data-toggle="buttons" id="bath">
+
+			  <label class="btn btn-secondary active">
+			    <input type="radio" name="Bathrooms" id="option1" autocomplete="off" checked value="1"> 1
+			  </label>
+
+			  <label class="btn btn-secondary">
+			    <input type="radio" name="Bathrooms" id="option2" autocomplete="off" value="2"> 2
+			  </label>
+
+			  <label class="btn btn-secondary">
+			    <input type="radio" name="Bathrooms" id="option3" autocomplete="off" value="3"> 3
+			  </label>
+
+			  <label class="btn btn-secondary">
+			    <input type="radio" name="Bathrooms" id="option4" autocomplete="off" value="4"> 4
+			  </label>
+
+			  <label class="btn btn-secondary">
+			    <input type="radio" name="Bathrooms" id="option5" autocomplete="off" value="5"> 5
+			  </label>
+
+			</div>
+			<br><br>
+
+			<h5><strong>Location</strong></h5>
+
+			<select class="location" name="" id="uiLocations">
+				<option value="" disabled="disabled" selected="selected">Choose a Location</option>
+				<option>Electronic City</option>
+				<option>Rajajai Nagar</option>
+			</select>
+			<br><br>
+
+
+			<button type="button" class="btn btn-dark" onclick="onClickHandler()">Estimate Price</button>
+			<br>
+			<br>
+			<div id="uiEstimatedPrice" class="result">
+				<h2></h2>
+			</div>
+
+
+		</form>
+
+	</div>
+
+</body>
+</html>
